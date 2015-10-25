@@ -1,7 +1,12 @@
-var gulp = require("gulp");
-var jshint = require("gulp-jshint");
-var browserify = require("browserify");
-var transform = require("vinyl-transform");
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var concat = require('gulp-concat');
+var jshint = require('gulp-jshint');
+
+var paths = {
+	'bower': './bower_components',
+	'assets': './assets'
+}
 
 gulp.task("jshint", function () {
     gulp.src("./public/javascripts/*.js")
@@ -9,20 +14,34 @@ gulp.task("jshint", function () {
         .pipe(jshint.reporter("default"));
 });
 
-gulp.task("watch", function () {
-    gulp.watch(["./public/javascripts/**/*.js"], ["browserify"]);
+gulp.task('styles', function() {
+    return gulp.src([
+        './assets/styles/app.scss'
+        ])
+        .pipe(sass({
+        	includePaths: [
+        		paths.bower + '/foundation/scss'
+        	]
+        }))
+        .pipe(concat('app.css'))
+        .pipe(gulp.dest('./public/css'));
 });
 
-gulp.task("browserify", function () {
-    var browserified = transform(function(filename) {
-        var b = browserify(filename);
-        return b.bundle();
-    });
+gulp.task('scripts', function() {
+	gulp.src([
+		paths.bower + '/jquery/dist/jquery.js',
+		paths.bower + '/foundation/js/foundation.js',
+		paths.assets + 'scripts/app.js'
+	])
+	.pipe(concat('app.js'))
+	.pipe(gulp.dest('./public/js'));
 
-    return gulp.src(["./public/javascripts/index.js"])
-        .pipe(browserified)
-        .pipe(gulp.dest('./dist/javascripts'));
+	return gulp.src(paths.bower + '/modernizr/modernizr.js')
+		.pipe(gulp.dest('./public/js'));
 });
 
-gulp.task("default", ["watch", "jshint"]);
-
+gulp.task('watch', function() {
+	gulp.watch(paths.assets + 'styles/**/*.scss', ['styles']);
+	gulp.watch(paths.assets + 'scripts/**/*.js', ['scripts']);
+});
+gulp.task('default', ['watch', 'jshint', 'styles', 'scripts']);

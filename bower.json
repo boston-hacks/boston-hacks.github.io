@@ -1,0 +1,22 @@
+{
+  "name": "bostonhacks-live-2015",
+  "homepage": "https://github.com/dqgorelick/bostonhacks-live-2015",
+  "authors": [
+    "Daniel Gorelick <dqgorelick@gmail.com>"
+  ],
+  "description": "Boston Hacks 2015 live page",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation": "~5.5.3"
+  }
+}
