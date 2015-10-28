@@ -968,20 +968,6 @@ body {
   z-index: 9999;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9); }
-  .header > div {
-    position: relative; }
-  .header .sections {
-    border-bottom: 2px solid #E51F63; }
-    .header .sections span {
-      display: inline-block;
-      color: #5B5B5C;
-      font-size: 20px;
-      font-weight: 400;
-      padding: 0 10px 0 10px;
-      border-bottom: 10px solid rgba(255, 255, 255, 0); }
-    .header .sections span:hover {
-      color: #E51F63;
-      border-bottom: 10px solid #E51F63; }
   .header .title span {
     color: #E51F63;
     font-size: 40px;
@@ -996,6 +982,29 @@ body {
       font-size: 40px;
       color: #E51F63;
       animation: live 2s infinite; }
+  .header .sections {
+    border-bottom: 2px solid #E51F63; }
+    .header .sections span {
+      display: inline-block;
+      color: #5B5B5C;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 0 8px 0 8px;
+      border-bottom: 10px solid rgba(255, 255, 255, 0); }
+    .header .sections span:hover {
+      color: #E51F63;
+      border-bottom-color: #E51F63; }
+  .header .collapse {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .header .collapse span {
+      float: left; }
+  .header .collapse-button {
+    cursor: pointer;
+    display: none; }
 
 section.section-title {
   padding-top: 100px;
@@ -1032,5 +1041,23 @@ footer {
       font-size: 20px; }
   .header .sections span {
     font-size: 12px; }
+  .header .collapse {
+    height: 0;
+    overflow: hidden;
+    text-align: center; }
+    .header .collapse span {
+      width: 100%;
+      clear: left;
+      border: none;
+      font-size: 20px; }
+    .header .collapse span:hover {
+      border: none; }
+  .header .collapse.active {
+    height: 220px; }
+    .header .collapse.active span:hover {
+      color: #efefef;
+      background-color: #E51F63; }
+  .header .collapse-button {
+    display: inherit; }
   section.section-title {
     font-size: 40px; } }
