@@ -1,0 +1,42 @@
+Pages on the site:
+1: Landing page
+2: Maps page
+3: Travel page
+4: Prizes page
+5: Sponsors page
+6: Bonus page
+7: Schedule
+8: FAQs
+
+Landing Page:
+All relevant event info
+Slack signup
+Links to download apps for the hackathon
+
+Maps page:
+Map of the event
+Map of Boston
+Link for BU Mobile app?
+
+Schedule page:
+Schedule for the event
+*Parse integration
+*Possibly link schedule page up with the maps?
+
+Travel page:
+Info about buses
+Arriving
+Departing
+Airport directions
+
+Prizes page:
+Get list of all sponsor prizes
+.xyz domain name contest-> winner gets quad copter link for DevPost
+
+FAQs:
+START COMPILING THE LIST
+
+Hardware page?
+
+Bonus?
+Talk about all of the people coming?

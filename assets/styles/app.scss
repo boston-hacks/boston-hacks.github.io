@@ -1,2 +1,11 @@
 @import 'foundation/settings';
-@import 'foundation';
+@import "foundation/components/grid";
+@import "variables";
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+body{
+	font-family: $main-font;
+}

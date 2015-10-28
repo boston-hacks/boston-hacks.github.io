@@ -15790,3 +15790,5 @@ return jQuery;
     reflow : function () {}
   };
 }(jQuery, window, window.document));
+
+$(document).foundation();

@@ -4,8 +4,8 @@ var concat = require('gulp-concat');
 var jshint = require('gulp-jshint');
 
 var paths = {
-	'bower': './bower_components',
-	'assets': './assets'
+	'bower': './bower_components/',
+	'assets': './assets/'
 }
 
 gulp.task("jshint", function () {
