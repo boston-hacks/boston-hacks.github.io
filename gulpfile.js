@@ -29,8 +29,8 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
 	gulp.src([
-		paths.bower + '/jquery/dist/jquery.js',
-		paths.bower + '/foundation/js/foundation.js',
+		// paths.bower + '/jquery/dist/jquery.js',
+		// paths.bower + '/foundation/js/foundation.js',
 		paths.assets + 'scripts/app.js'
 	])
 	.pipe(concat('app.js'))

@@ -1,1 +1,1 @@
-$(document).foundation();
+console.log("Hello World");

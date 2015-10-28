@@ -1,4 +1,4 @@
-@import 'foundation/settings';
+// @import 'foundation/settings';
 @import "foundation/components/grid";
 @import "variables";
 
@@ -8,4 +8,112 @@
 
 body{
 	font-family: $main-font;
+	height: 100%;
+	background-image: url(../../assets/images/banner3.png);
+	background-size: cover;
+}
+
+.header {
+	position: fixed;
+	z-index:9999;
+	width:100%;
+	background-color: rgba(255,255,255,0.9);
+
+	> div{
+		position:relative;
+		// background-color: rgba(255,255,255,0.5);
+	}
+
+	.sections{
+		border-bottom: 2px solid $bh-pink;
+
+		span{
+			display:inline-block;
+			color:$bh-grey;
+			font-size:20px;
+			font-weight: 400;
+			padding:0 10px 0 10px;
+			border-bottom: 10px solid rgba(255,255,255,0);
+		}
+		span:hover{
+			color:$bh-pink;
+			border-bottom: 10px solid $bh-pink;
+		}
+	}
+
+	.title{
+		span{
+			color:$bh-pink;
+			font-size:40px;
+			font-weight: 600;
+			font-style: italic;
+		}
+	}
+
+	.live{
+		color:$bh-grey;
+		font-size:40px;
+		font-weight: 600;
+
+		span::before{
+			content: '\25CF';
+			font-size: 40px;
+			color:$bh-pink;
+			animation: live 2s infinite;
+		}
+	}
+}
+
+section.section-title{
+	padding-top: 100px;
+	color:$bh-pink;
+	font-size:80px;
+	font-weight: 600;
+	z-index:8888;
+	// text-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
+}
+
+footer{
+	background-color: $bh-blue;
+	color: rgba(242, 242, 242, 0.5);
+	font-size:18px;
+	padding:10px;
+	span{
+		color: $bh-pink;
+	}
+}
+/******************************************************
+	MEDIA QUERIES
+*******************************************************/
+
+@keyframes live {
+	0% { opacity: 1 }
+	50% { opacity:0 }
+	100% { opacity: 1 }
+}
+
+@media only screen and (max-width: 40.063em) {
+	.header{
+		.title{
+			span{
+				font-size:20px;
+			}
+		}
+		.live{
+			font-size:20px;
+
+			span::before{
+				font-size: 20px;
+			}
+		}
+		.sections{
+			span{
+				font-size: 12px;
+			}
+		}
+	}
+
+	section.section-title{
+		font-size:40px;
+	}
 }
