@@ -6,15 +6,13 @@ $bh-blue: #2F3F48;
 $bh-white: #efefef;
 
 $dev: 2px dotted red;
-/*
-Font weights
-100 = thin
-200 = extra-light
-300 = light
-400 = normal, book
-500 = medium
-600 = semi-bold
-700 = bold
-800 = heavy
-900 = black
-*/
+
+$thin: 100;
+$extra-light: 200;
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$heavy: 800;
+$black: 900;

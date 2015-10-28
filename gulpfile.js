@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var jshint = require('gulp-jshint');
+var sourcemaps = require('gulp-sourcemaps');
 
 var paths = {
 	'bower': './bower_components/',
@@ -16,11 +17,12 @@ gulp.task("jshint", function () {
 
 gulp.task('styles', function() {
     return gulp.src([
-        './assets/styles/app.scss'
+        './assets/styles/**.scss'
         ])
         .pipe(sass({
         	includePaths: [
-        		paths.bower + '/foundation/scss'
+        		paths.bower + 'foundation/scss',
+        		paths.assets + 'styles/**.scss'
         	]
         }))
         .pipe(concat('app.css'))

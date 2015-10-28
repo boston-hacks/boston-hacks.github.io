@@ -936,18 +936,6 @@ select {
     right: 91.66667%;
     left: auto; } }
 
-/*
-Font weights
-100 = thin
-200 = extra-light
-300 = light
-400 = normal, book
-500 = medium
-600 = semi-bold
-700 = bold
-800 = heavy
-900 = black
-*/
 .text-center {
   text-align: center; }
 
@@ -958,16 +946,16 @@ Font weights
   text-align: right; }
 
 body {
-  font-family: "Proxima Nova", proxima-nova, Helvetica, Arial, sans-serif;
-  height: 100%;
-  background-image: url(../../assets/images/banner3.png);
-  background-size: cover; }
+  font-family: "Proxima Nova", proxima-nova, Helvetica, Arial, sans-serif; }
+
+.dev {
+  border: 2px dotted red; }
 
 .header {
   position: fixed;
   z-index: 9999;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: #efefef; }
   .header .title span {
     color: #E51F63;
     font-size: 40px;
@@ -991,7 +979,7 @@ body {
       font-weight: 400;
       padding: 0 8px 0 8px;
       border-bottom: 10px solid rgba(255, 255, 255, 0); }
-    .header .sections span:hover {
+    .header .sections span:hover, .header .sections span.active {
       color: #E51F63;
       border-bottom-color: #E51F63; }
   .header .collapse {
@@ -1004,7 +992,9 @@ body {
       float: left; }
   .header .collapse-button {
     cursor: pointer;
-    display: none; }
+    display: none;
+    color: #E51F63;
+    font-size: 30px; }
 
 section.section-title {
   padding-top: 100px;
@@ -1014,6 +1004,7 @@ section.section-title {
   z-index: 8888; }
 
 footer {
+  width: 100%;
   background-color: #2F3F48;
   color: rgba(242, 242, 242, 0.5);
   font-size: 18px;
@@ -1061,3 +1052,6 @@ footer {
     display: inherit; }
   section.section-title {
     font-size: 40px; } }
+
+
+

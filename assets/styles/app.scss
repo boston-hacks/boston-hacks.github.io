@@ -15,28 +15,29 @@
 
 body {
     font-family: $main-font;
-    height: 100%;
-    background-image: url(../../assets/images/banner3.png);
-    background-size: cover;
+}
+
+.dev {
+	border:$dev;
 }
 
 .header {
     position: fixed;
     z-index: 9999;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: $bh-white;
     .title {
         span {
             color: $bh-pink;
             font-size: 40px;
-            font-weight: 600;
+            font-weight: $semi-bold;
             font-style: italic;
         }
     }
     .live {
         color: $bh-grey;
         font-size: 40px;
-        font-weight: 600;
+        font-weight: $semi-bold;
         span::before {
             content: '\25CF';
             font-size: 40px;
@@ -50,11 +51,11 @@ body {
             display: inline-block;
             color: $bh-grey;
             font-size: 20px;
-            font-weight: 400;
+            font-weight: $normal;
             padding: 0 8px 0 8px;
             border-bottom: 10px solid rgba(255, 255, 255, 0);
         }
-        span:hover {
+        span:hover, span.active {
             color: $bh-pink;
             border-bottom-color: $bh-pink;
         }
@@ -72,6 +73,8 @@ body {
     .collapse-button {
     	cursor:pointer;
         display: none;
+        color:$bh-pink;
+        font-size:30px;
     }
 }
 
@@ -79,12 +82,13 @@ section.section-title {
     padding-top: 100px;
     color: $bh-pink;
     font-size: 80px;
-    font-weight: 600;
+    font-weight: $semi-bold;
     z-index: 8888;
     // text-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
 }
 
 footer {
+	width:100%;
     background-color: $bh-blue;
     color: rgba(242, 242, 242, 0.5);
     font-size: 18px;
