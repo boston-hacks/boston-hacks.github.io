@@ -1,0 +1,64 @@
+@import "variables";
+
+section.map{
+	.grey-background{
+		img{
+			width:400px;
+			height:auto;
+		}
+	}
+	.floors-buttons {
+		cursor:pointer;
+		div{
+			color: $bh-pink;
+			font-size: 20px;
+			line-height: 25px;
+			padding: 10px;
+			border-right: solid;
+			border-right-width: 10px;
+			border-right-color: rgba(225,225,225,0);
+		}
+		div.active{
+			// border-right-color: $bh-pink;
+			color:#ffffff;
+		}
+		div.active::after{
+			content: "//";
+		    color: #ffffff;
+		    /* color: #E51F63; */
+		    font-size: 55px;
+		    position: absolute;
+		    right: 109px;
+		    height: 70px;
+		    width: 140px;
+		    z-index: -1;
+		    margin-top: -37px;
+		}
+		div.active::before{
+			content: "";
+		    position: absolute;
+		    right: 0;
+		    height: 49px;
+		    width: 150px;
+		    background-color: #E51F63;
+		    z-index: -2;
+		}
+	}
+
+	.floors{
+		div{
+			display:none;
+		}
+		div.active{
+			display:block;
+		}
+		img{
+			width:400px;
+			height:auto;
+		}
+	}
+	.mapkey{
+		width:100%;
+		max-width:600px;
+	}
+}

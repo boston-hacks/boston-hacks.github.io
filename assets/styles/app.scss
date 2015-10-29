@@ -28,6 +28,8 @@ body {
     z-index: 9999;
     width: 100%;
     background-color: $bh-white;
+    // background-image:url(../assets/images/banner4.png);
+    // background-size: cover;
     .title {
         span {
             color: $bh-pink;
@@ -89,8 +91,15 @@ section.section-title {
     // text-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
 }
 
+section{
+	.grey-background{
+		color: $bh-grey-bg-font;
+		background-color: $bh-grey-bg;
+		border-radius: 4px;
+	}
+}
 .page-title {
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 footer {

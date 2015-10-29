@@ -945,8 +945,8 @@ select {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.4.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  src: url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.eot?v=4.4.0");
+  src: url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -3022,8 +3022,13 @@ section.section-title {
   font-weight: 600;
   z-index: 8888; }
 
+section .grey-background {
+  color: #4D616A;
+  background-color: #F5F5F5;
+  border-radius: 4px; }
+
 .page-title {
-  margin: 2rem 0; }
+  margin: 1rem 0; }
 
 footer {
   width: 100%;
@@ -3098,16 +3103,61 @@ section.hardware {
   margin-bottom: 3rem; }
   section.hardware .row {
     max-width: 52rem; }
-  section.hardware .grey-background {
-    color: #4D616A;
-    background-color: #F5F5F5;
-    border-radius: 4px; }
   section.hardware .hardware-list {
     list-style-type: none; }
   section.hardware .hardware-title {
     color: #E51F63; }
 
 
+section.map .grey-background img {
+  width: 400px;
+  height: auto; }
+
+section.map .floors-buttons {
+  cursor: pointer; }
+  section.map .floors-buttons div {
+    color: #E51F63;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px;
+    border-right: solid;
+    border-right-width: 10px;
+    border-right-color: rgba(225, 225, 225, 0); }
+  section.map .floors-buttons div.active {
+    color: #ffffff; }
+  section.map .floors-buttons div.active::after {
+    content: "//";
+    color: #ffffff;
+    /* color: #E51F63; */
+    font-size: 55px;
+    position: absolute;
+    right: 109px;
+    height: 70px;
+    width: 140px;
+    z-index: -1;
+    margin-top: -37px; }
+  section.map .floors-buttons div.active::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 49px;
+    width: 150px;
+    background-color: #E51F63;
+    z-index: -2; }
+
+section.map .floors div {
+  display: none; }
+
+section.map .floors div.active {
+  display: block; }
+
+section.map .floors img {
+  width: 400px;
+  height: auto; }
+
+section.map .mapkey {
+  width: 100%;
+  max-width: 600px; }
 
 
 section.schedule {

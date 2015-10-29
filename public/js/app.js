@@ -6,7 +6,8 @@ function $(query){
 }
 
 function collapse(){
-	var el = $(".collapse")[0]
+	var el = $(".collapse")[0];
+	var button = $(".collapse-button")[0];
 	if (collapsed){
 		el.className += " active"
 		button.innerHTML = "&#x2716;"
@@ -25,4 +26,17 @@ function faq(selected){
 	};
 	selected.className += " active";
 	console.log(selected);
+}
+
+function map(id){
+	console.log(id);
+	var floors = $(".floors div");
+	var buttons = $(".floors-buttons div");
+	for (var i = 0; i <= floors.length - 1; i++) {
+		floors[i].className = "";
+		buttons[i].className = "row";
+	};
+	buttons[floors.length - 1 - id].className += " active";
+	floors[id].className = "active";
+	// console.log(".floors span");
 }
