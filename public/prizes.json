@@ -53,7 +53,64 @@
       "rank": 6,
       "description": "Quadcopters? Skydiving? A trip to the moon? What could it be?",
       "value": 0
+    },
+    {
+      "name": ".xyz",
+      "rank": 7,
+      "description": "A cool Star Wars droid",
+      "value": 0
+    },
+    {
+      "name": "Epic",
+      "rank": 8,
+      "description": "$100 Newegg.com gift cards for each group member",
+      "value": 100
+    },
+    {
+      "name": "KPCB",
+      "rank": 9,
+      "description": "Automatic Interview for the KPCB Fellowship Program",
+      "value": 0
+    },
+    {
+      "name": "Twilio",
+      "rank": 10,
+      "description": "A brand new Surface Pro for each group member",
+      "value": 0
+    },
+    {
+      "name": "Microsoft",
+      "rank": 11,
+      "description": "A brand new Surface Pro tablet for each group member"
+    },
+    {
+      "name": "Wolfram",
+      "rank":12,
+      "description": "One year for each of Wolfram Programming Cloud Developer Level, Wolfram Mathematica Online, and Wolfram|Alpha Pro for the best 3 uses of Wolfram technology, plus $300 to be split amongst the best team ",
+      "value": 0
+    },
+    {
+      "name": "Soylent",
+      "rank": 13,
+      "description": "Soylent",
+      "value": 0
+    },
+    {
+      "name": "Thiel Fellowship",
+      "rank": 14,
+      "description": "Get reviewed for the prestigious Thiel Fellowship",
+      "value": 0
+    },
+    {
+      "name": "1517",
+      "rank": 15,
+      "description": "3-5 grants from 1517 to help you develop your hackathon",
+      "value": 0
+    },
+    {
+      "name": "Costume Contest",     "rank": 16,
+      "description": "Footsie pajamas of your favorite cartoon characters",
+      "value": 0
     }
-
   ]
 }
