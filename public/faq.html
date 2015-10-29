@@ -24,17 +24,17 @@
             </div>
             <div class="column small-3 live text-right">
                 <span>&#8201;Live</span>
-                <div class="collapse-button text-left" onclick="collapse()"></div>
+                <div class="collapse-button text-left" onclick="collapse()">&#9776;</div>
             </div>
             <div class="columns small-12 sections">
                 <div class="collapse">
-                    <a href="index.html"><span>HOME</span></a>
+                    <a href="index.html"><span class="active">HOME</span></a>
                     <a href="map.html"><span>MAP</span></a>
                     <a href="schedule.html"><span>SCHEDULE</span></a>
                     <a href="prizes.html"><span>PRIZES</span></a>
                     <a href="sponsors.html"><span>SPONSORS</span></a>
                     <a href="travel.html"><span>TRAVEL</span></a>
-                    <a href="faq.html"><span class="active">FAQ</span></a>
+                    <a href="faq.html"><span>FAQ</span></a>
                 </div>
             </div>
         </div>
@@ -42,46 +42,70 @@
     <section class="section-title text-center">
         <div>FAQ</div>
     </section>
-    <section class="questions columns small-12">
-        <div class="questions__question columns medium-4 small-12">
+    <section class="faqs row">
+        <div class="columns text-center small-12">
+            <span class="faq-question"  onclick="faq(this)">
             <div class="title">Where is it?</div>
             <div class="text">George Sherman Union, 2nd Floor in Metcalf Hall at 775 Commonwealth Avenue, Boston, MA, 02215.</div>
+            </span>
         </div>
-        <div class="questions__question columns medium-4 small-12">
+        <div class="columns text-center small-12">
+            <span class="faq-question"  onclick="faq(this)">
             <div class="title">Who's coming?</div>
             <div class="text">We expect 500 hackers from all around the world to attend BostonHacks.</div>
+            </span>
         </div>
-        <div class="questions__question columns medium-4 small-12">
+        <div class="columns text-center small-12">
+            <span class="faq-question"  onclick="faq(this)">
             <div class="title">Who can attend?</div>
             <div class="text">All students are welcome. Unfortunately, we will not be able to accommodate students under 18 this year.</div>
+            </span>
         </div>
-        <div class="questions__question columns medium-4 small-12" style="margin-bottom:0px;">
+        <div class="columns text-center small-12" style="margin-bottom:0px;">
+            <span class="faq-question" onclick="faq(this)">
             <div class="title">Do I need experience?</div>
             <div class="text">No experience necessary. Don't worry about being new to hackathons. We will have plenty of mentors and resources. Come, learn, and experience your first hackathon at BostonHacks!</div>
+            </span>
         </div>
-        <div class="questions__question columns medium-4 small-12">
+        <div class="columns text-center small-12">
+            <span class="faq-question"  onclick="faq(this)">
             <div class="title">Are there any rules?</div>
             <div class="text">We want to ensure a positive experience for every participant. We encourage you to read our
                 <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a>.</div>
+                </span>
         </div>
-        <div class="questions__question columns medium-4 small-12">
+
+        <div class="columns text-center small-12">
+            <span class="faq-question"  onclick="faq(this)">
             <div class="title">What should I bring?</div>
             <div class="text">You should bring your laptop, phone, chargers, and sleeping bag. All food and other accommodations will be taken care of.</div>
+            </span>
         </div>
-        <div class="questions__question columns medium-4 small-12">
+        <div class="columns text-center small-12">
+            <span class="faq-question"  onclick="faq(this)">
             <div class="title">Can we form teams?</div>
             <div class="text">Of course you can! We encourage people to work in teams of up to 4 people. You can work alone, but it won't be the same. There will be plenty of team building events on site and online.</div>
+            </span>
         </div>
-        <div class="questions__question columns medium-4 small-12">
+        <div class="columns text-center small-12">
+            <span class="faq-question"  onclick="faq(this)">
             <div class="title">Does it cost anything?</div>
             <div class="text">BostonHacks is 100% free. You won't have to spend a dime! Everything will be absolutely free.</div>
+            </span>
         </div>
-        <div class="questions__question columns medium-4 small-12" style="float:left;">
+        <div class="columns text-center small-12" style="float:left;">
+            <span class="faq-question" onclick="faq(this)">
             <div class="title">Will there be travel reimbursements?</div>
             <div class="text">We're working on providing travel reimbursements, and we will provide the form later.</div>
+            </span>
         </div>
     </section>
+    </div>
+
     <script type="text/javascript" src="js/app.js"></script>
 </body>
-<footer class="text-center">Made with <span id="heart">&hearts;</span> by the BostonHacks Team.</footer>
+<!-- <footer class="text-center">Made with <span id="heart">&hearts;</span> by the BostonHacks Team.</footer> -->
 </html>
+
+
+

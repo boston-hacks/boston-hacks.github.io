@@ -1,0 +1,23 @@
+@import "variables";
+
+section.faqs{
+    .title{
+        font-size:20px;
+        font-weight: $semi-bold;
+        color:$bh-pink;
+        cursor:pointer;
+    }
+
+    .text{
+        height:0;
+        overflow:hidden;
+        width:200px;
+        margin: 0 auto;
+    }
+}
+
+.faqs .active{
+    .text{
+        height:150%;
+    }
+}

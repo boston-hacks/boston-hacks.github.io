@@ -1055,9 +1055,46 @@ footer {
   section.section-title {
     font-size: 40px; } }
 
+section.faqs .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #E51F63;
+  cursor: pointer; }
+
+section.faqs .text {
+  height: 0;
+  overflow: hidden;
+  width: 200px;
+  margin: 0 auto; }
+
+.faqs .active .text {
+  height: 150%; }
 
 
 
 
 
+.company-logo {
+  text-align: center; }
+  .company-logo img {
+    height: 50px;
+    width: auto; }
+
+.company-logo-2 {
+  text-align: center; }
+  .company-logo-2 img {
+    height: 50px;
+    width: auto; }
+
+.copany-logo-3 {
+  text-align: center; }
+  .copany-logo-3 img {
+    height: 50px;
+    width: auto; }
+
+.organizer-logo {
+  text-align: center; }
+  .organizer-logo img {
+    height: 50px;
+    width: auto; }
 
