@@ -1,0 +1,40 @@
+@import "variables";
+
+section.schedule{
+	.row{
+		max-width: 70rem;
+	}
+	.schedule-table{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.schedule-header{
+		color: $bh-pink;
+	}
+
+	.start-time{
+		width: 15%;
+	}
+
+	.end-time{
+		width: 15%;
+	}
+
+	.start-time-2{
+		width: 10%;
+	}
+
+	.end-time-2{
+		width: 14%;
+	}
+
+	.event{
+		width: 40%;
+	}
+
+	.location{
+		width: 30%
+	}
+}
+
