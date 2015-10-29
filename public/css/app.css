@@ -1079,33 +1079,27 @@ section.hardware .hardware-list {
 
 
 
-section.schedule .row {
-  max-width: 70rem; }
-
-section.schedule .schedule-table {
-  width: 100%;
-  margin: 0 auto; }
-
-section.schedule .schedule-header {
-  color: #E51F63; }
-
-section.schedule .start-time {
-  width: 15%; }
-
-section.schedule .end-time {
-  width: 15%; }
-
-section.schedule .start-time-2 {
-  width: 10%; }
-
-section.schedule .end-time-2 {
-  width: 14%; }
-
-section.schedule .event {
-  width: 40%; }
-
-section.schedule .location {
-  width: 30%; }
+section.schedule {
+  margin-bottom: 3rem; }
+  section.schedule .row {
+    max-width: 70rem; }
+  section.schedule .schedule-table {
+    width: 100%;
+    margin: 0 auto; }
+  section.schedule .schedule-header {
+    color: #E51F63; }
+  section.schedule .start-time {
+    width: 15%; }
+  section.schedule .end-time {
+    width: 15%; }
+  section.schedule .start-time-2 {
+    width: 10%; }
+  section.schedule .end-time-2 {
+    width: 14%; }
+  section.schedule .event {
+    width: 40%; }
+  section.schedule .location {
+    width: 30%; }
 
 .company-logo {
   text-align: center; }
