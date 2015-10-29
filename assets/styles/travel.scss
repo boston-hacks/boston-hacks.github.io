@@ -1,0 +1,37 @@
+@import "variables";
+
+section.travel{
+	margin-bottom: 3rem;
+
+	.grey-background{
+		color: #4D616A;
+		background-color: #F5F5F5;
+		border-radius: 4px;
+		padding: 5px;
+		margin-bottom: 20px;
+	}
+
+	.smaller-row{
+		max-width: 52rem;
+	}
+
+	.travel-list{
+		list-style-type: none;
+	}
+
+	.travel-subtitle{
+		color: #E51F63;
+	}
+
+	.silver{
+		color: #8C8C8C;
+	}
+
+	.red{
+		color: #E61E49;
+	}
+
+	.green{
+		color: #10B328;
+	}
+}

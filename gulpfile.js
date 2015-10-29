@@ -14,6 +14,11 @@ gulp.task("jshint", function () {
         .pipe(jshint.reporter("default"));
 });
 
+gulp.task('icons', function() {
+    return gulp.src(paths.bower + 'fontawesome/fonts/**.*')
+        .pipe(gulp.dest('./public/fonts'));
+});
+
 gulp.task('styles', function() {
     return gulp.src([
         './assets/styles/**.scss'
@@ -21,8 +26,8 @@ gulp.task('styles', function() {
         .pipe(sass({
         	includePaths: [
         		paths.bower + 'foundation/scss',
-        		paths.assets + 'styles/**.scss'
-        	]
+                paths.bower + 'fontawesome/scss',
+        		paths.assets + 'styles/**.scss'        	]
         }))
         .pipe(concat('app.css'))
         .pipe(gulp.dest('./public/css'));
@@ -45,4 +50,5 @@ gulp.task('watch', function() {
 	gulp.watch(paths.assets + 'styles/**/*.scss', ['styles']);
 	gulp.watch(paths.assets + 'scripts/**/*.js', ['scripts']);
 });
-gulp.task('default', ['watch', 'jshint', 'styles']);
+
+gulp.task('default', ['watch', 'jshint', 'icons', 'styles']);

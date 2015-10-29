@@ -18,5 +18,8 @@
   ],
   "devDependencies": {
     "foundation": "~5.5.3"
+  },
+  "dependencies": {
+    "fontawesome": "~4.4.0"
   }
 }
