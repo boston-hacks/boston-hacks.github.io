@@ -1070,36 +1070,15 @@ section.faqs .text {
 .faqs .active .text {
   height: 150%; }
 
+section.hardware .row {
+  max-width: 52rem; }
+
+section.hardware .hardware-list {
+  list-style-type: none; }
 
 
 
-<<<<<<< Updated upstream
 
-.company-logo {
-  text-align: center; }
-  .company-logo img {
-    height: 50px;
-    width: auto; }
-
-.company-logo-2 {
-  text-align: center; }
-  .company-logo-2 img {
-    height: 50px;
-    width: auto; }
-
-.copany-logo-3 {
-  text-align: center; }
-  .copany-logo-3 img {
-    height: 50px;
-    width: auto; }
-
-.organizer-logo {
-  text-align: center; }
-  .organizer-logo img {
-    height: 50px;
-    width: auto; }
-
-=======
 section.schedule .row {
   max-width: 70rem; }
 
@@ -1127,4 +1106,28 @@ section.schedule .event {
 
 section.schedule .location {
   width: 30%; }
->>>>>>> Stashed changes
+
+.company-logo {
+  text-align: center; }
+  .company-logo img {
+    height: 50px;
+    width: auto; }
+
+.company-logo-2 {
+  text-align: center; }
+  .company-logo-2 img {
+    height: 50px;
+    width: auto; }
+
+.copany-logo-3 {
+  text-align: center; }
+  .copany-logo-3 img {
+    height: 50px;
+    width: auto; }
+
+.organizer-logo {
+  text-align: center; }
+  .organizer-logo img {
+    height: 50px;
+    width: auto; }
+
