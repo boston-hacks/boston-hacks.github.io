@@ -952,7 +952,6 @@ body {
   border: 2px dotted red; }
 
 .header {
-  position: fixed;
   z-index: 9999;
   width: 100%;
   background-color: #efefef; }
@@ -963,11 +962,11 @@ body {
     font-style: italic; }
   .header .live {
     color: #5B5B5C;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 600; }
     .header .live span::before {
       content: '\25CF';
-      font-size: 40px;
+      font-size: 28px;
       color: #E51F63;
       animation: live 2s infinite; }
   .header .sections {
@@ -1024,12 +1023,14 @@ footer {
     opacity: 1; } }
 
 @media only screen and (max-width: 40.063em) {
-  .header .title span {
-    font-size: 20px; }
-  .header .live {
-    font-size: 20px; }
-    .header .live span::before {
+  .header .title {
+    padding-top: 5px; }
+    .header .title span {
       font-size: 20px; }
+  .header .live span {
+    display: none; }
+  .header .live span::before {
+    font-size: 20px; }
   .header .sections span {
     font-size: 12px; }
   .header .collapse {
@@ -1049,6 +1050,7 @@ footer {
       color: #efefef;
       background-color: #E51F63; }
   .header .collapse-button {
+    text-align: right;
     display: inherit; }
   section.section-title {
     font-size: 40px; } }
