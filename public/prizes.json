@@ -1,0 +1,41 @@
+{
+  "prizes": [
+    {
+      "name": "Chipotle Burritos",
+      "rank": 1,
+      "description": "Yearlong supply of chipotle burritos",
+      "value": 1600
+    },
+    {
+      "name": "Trip to Disney World",
+      "rank": 2,
+      "description": "2-day trip for 4 people to Disney World",
+      "value": 1000
+    },
+    {
+      "name": "Airfare to Hackathon/Conference in the US or Canada",
+      "rank": 3,
+      "description": "Get a reimbursment for any hackathon you want to got to in the continental US or Canada",
+      "value": 1600
+    },
+    {
+      "name": "Hoverboards",
+      "rank": 4,
+      "description": "Get free hoverboards for your group!"
+    },
+    {
+      "name": "Pebble Round",
+      "rank": 5,
+      "description": "Pebble round is a pretty cool smartwatch",
+      "value": 1000
+
+    },
+    {
+      "name": "Mystery Box",
+      "rank": 6,
+      "description": "Quadcopters? Skydiving? A trip to the moon? What could it be?",
+      "value": 0
+    }
+
+  ]
+}
