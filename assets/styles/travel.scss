@@ -32,4 +32,10 @@ section.travel{
 	.green{
 		color: #10B328;
 	}
+	a{
+		color:#000000;
+	}
+	a:hover{
+		color:$bh-pink;
+	}
 }

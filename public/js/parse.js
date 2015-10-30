@@ -7,9 +7,6 @@ var announcements = Parse.Object.extend("Announcements");
 var query = new Parse.Query(announcements);
 var box = $(".parse > div")[0];
 var now = new Date();
-console.log(now);
-
-
 
 function cleanDate(ugly) {
     var ms = now.getTime() - ugly.getTime(),
@@ -21,48 +18,49 @@ function cleanDate(ugly) {
         seconds = Math.floor((ms / 1000) % 60);
 
     if (months) {
-        return (months > 1) ? (months + " months ago.") : (months + " month ago.");
+        return (months > 1) ? (months + " months ago.") : (months + " month ago");
     } else if (weeks) {
-        return (weeks > 1) ? (weeks + " weeks ago.") : (weeks + " week ago.");
+        return (weeks > 1) ? (weeks + " weeks ago") : (weeks + " week ago");
     } else if (days) {
-        return (days > 1) ? (days + " days ago.") : (days + " day ago.");
+        return (days > 1) ? (days + " days ago") : (days + " day ago");
     } else if (hours) {
-        return (hours > 1) ? (hours + " hours ago.") : (hours + " hour ago.");
+        return (hours > 1) ? (hours + " hours ago") : (hours + " hour ago");
     } else if (minutes) {
-        return (minutes > 1) ? (minutes + " minutes ago.") : (minutes + " minute ago.");
+        return (minutes > 1) ? (minutes + " minutes ago") : (minutes + " minute ago");
     } else if (seconds) {
-        return (seconds > 1) ? (seconds + " seconds ago.") : (seconds + " second ago.");
+        return "less than a minute ago";
     } else {
         return " ";
     }
 }
 
-// window.setInterval(function(){
-
+function fetch(now) {
+    now = now || now;
     query.include("parent");
     query.find({
         success: function(events) {
-            console.log(events);
-            var html;
-            box.innerHTML = "h";
+            box.innerHTML = "";
             for (var i = events.length - 1; i >= 0; i--) {
-                console.log(i);
                 var event = events[i],
                     title = event.get("title"),
                     date = event.get("createdAt"),
                     description = event.get("description");
-                html +=
-                    "<h2>" + title + "</h2>" +
-                    "<p>" + description + "</p>" +
-                    "<p>" + cleanDate(date) + "</p>";
-                if (i == 0) {
-                    box.innerHTML += html;
-                }
+                var html =
+                    '<div class="parse-title">' + title + '</div>' +
+                    '<div class="parse-description">' + description + '</div>' +
+                    '<div class="parse-date">' + cleanDate(date) + '</div>';
+                box.innerHTML += html;
             }
-
         },
         error: function(error) {
-            alert(error);
+            alert("reach parse servers");
         }
     });
-// },3000);
+}
+
+fetch();
+
+window.setInterval(function() {
+    now = new Date();
+    fetch(now);
+}, 30000);

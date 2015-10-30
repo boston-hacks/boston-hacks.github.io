@@ -945,8 +945,8 @@ select {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.4.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  src: url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.eot?v=4.4.0");
+  src: url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2968,6 +2968,9 @@ select {
 body {
   font-family: "Proxima Nova", proxima-nova, Helvetica, Arial, sans-serif; }
 
+.white {
+  color: #ffffff; }
+
 .dev {
   border: 2px dotted red; }
 
@@ -3234,9 +3237,6 @@ footer {
   50% {
     box-shadow: 20px 4px #000000, 24px 4px #000000, 28px 4px #000000, 32px 4px #000000, 36px 4px #000000, 40px 4px #000000, 16px 8px #000000, 20px 8px #BBBBBB, 24px 8px #BBBBBB, 28px 8px #BBBBBB, 32px 8px #BBBBBB, 36px 8px #BBBBBB, 40px 8px #BBBBBB, 44px 8px #000000, 48px 8px #000000, 12px 12px #000000, 16px 12px #BBBBBB, 20px 12px #FFFFFF, 24px 12px #FFFFFF, 28px 12px #FFFFFF, 32px 12px #FFFFFF, 36px 12px #FFFFFF, 40px 12px #FFFFFF, 44px 12px #BBBBBB, 48px 12px #BBBBBB, 52px 12px #000000, 8px 16px #000000, 12px 16px #BBBBBB, 16px 16px #FFFFFF, 20px 16px #FFFFFF, 24px 16px #FFFFFF, 28px 16px #FFFFFF, 32px 16px #FFFFFF, 36px 16px #FFFFFF, 40px 16px #FFFFFF, 44px 16px #FFFFFF, 48px 16px #FFFFFF, 52px 16px #BBBBBB, 56px 16px #000000, 8px 20px #000000, 12px 20px #BBBBBB, 16px 20px #000000, 20px 20px #FFFFFF, 24px 20px #000000, 28px 20px #FFFFFF, 32px 20px #FFFFFF, 36px 20px #FFFFFF, 40px 20px #FFFFFF, 44px 20px #FFFFFF, 48px 20px #FFFFFF, 52px 20px #FFFFFF, 56px 20px #BBBBBB, 60px 20px #000000, 4px 24px #000000, 8px 24px #BBBBBB, 12px 24px #FFFFFF, 16px 24px #000000, 20px 24px #FFFFFF, 24px 24px #000000, 28px 24px #FFFFFF, 32px 24px #FFFFFF, 36px 24px #FFFFFF, 40px 24px #FFFFFF, 44px 24px #000000, 48px 24px #000000, 52px 24px #000000, 56px 24px #FFFFFF, 60px 24px #BBBBBB, 64px 24px #000000, 4px 28px #000000, 8px 28px #BBBBBB, 12px 28px #FFFFFF, 16px 28px #000000, 20px 28px #FFFFFF, 24px 28px #000000, 28px 28px #FFFFFF, 32px 28px #FFFFFF, 36px 28px #FFFFFF, 40px 28px #000000, 44px 28px #FFFFFF, 48px 28px #FFFFFF, 52px 28px #000000, 56px 28px #FFFFFF, 60px 28px #BBBBBB, 64px 28px #000000, 4px 32px #000000, 8px 32px #BBBBBB, 12px 32px #FFFFFF, 16px 32px #FFFFFF, 20px 32px #FFFFFF, 24px 32px #FFFFFF, 28px 32px #FFFFFF, 32px 32px #FFFFFF, 36px 32px #FFFFFF, 40px 32px #FFFFFF, 44px 32px #FFFFFF, 48px 32px #BBBBBB, 52px 32px #000000, 56px 32px #FFFFFF, 60px 32px #000000, 4px 36px #000000, 8px 36px #BBBBBB, 12px 36px #FD0E1B, 16px 36px #FFFFFF, 20px 36px #FD0E1B, 24px 36px #FFFFFF, 28px 36px #FD0E1B, 32px 36px #FFFFFF, 36px 36px #FFFFFF, 40px 36px #FFFFFF, 44px 36px #FFFFFF, 48px 36px #000000, 52px 36px #FFFFFF, 56px 36px #FFFFFF, 60px 36px #BBBBBB, 64px 36px #000000, 4px 40px #000000, 8px 40px #BBBBBB, 12px 40px #FFFFFF, 16px 40px #FD0E1B, 20px 40px #FFFFFF, 24px 40px #FD0E1B, 28px 40px #FFFFFF, 32px 40px #FFFFFF, 36px 40px #FFFFFF, 40px 40px #FFFFFF, 44px 40px #FFFFFF, 48px 40px #FFFFFF, 52px 40px #FFFFFF, 56px 40px #FFFFFF, 60px 40px #BBBBBB, 64px 40px #000000, 4px 44px #000000, 8px 44px #BBBBBB, 12px 44px #FFFFFF, 16px 44px #FFFFFF, 20px 44px #FFFFFF, 24px 44px #FFFFFF, 28px 44px #FFFFFF, 32px 44px #FFFFFF, 36px 44px #FFFFFF, 40px 44px #FFFFFF, 44px 44px #FFFFFF, 48px 44px #FFFFFF, 52px 44px #FFFFFF, 56px 44px #FFFFFF, 60px 44px #BBBBBB, 64px 44px #000000, 8px 48px #000000, 12px 48px #BBBBBB, 16px 48px #FFFFFF, 20px 48px #FFFFFF, 24px 48px #FFFFFF, 28px 48px #FFFFFF, 32px 48px #FFFFFF, 36px 48px #FFFFFF, 40px 48px #FFFFFF, 44px 48px #FFFFFF, 48px 48px #FFFFFF, 52px 48px #FFFFFF, 56px 48px #FFFFFF, 60px 48px #BBBBBB, 64px 48px #000000, 8px 52px #000000, 12px 52px #BBBBBB, 16px 52px #FFFFFF, 20px 52px #FFFFFF, 24px 52px #FFFFFF, 28px 52px #FFFFFF, 32px 52px #FFFFFF, 36px 52px #FFFFFF, 40px 52px #FFFFFF, 44px 52px #FFFFFF, 48px 52px #FFFFFF, 52px 52px #FFFFFF, 56px 52px #BBBBBB, 60px 52px #000000, 12px 56px #000000, 16px 56px #BBBBBB, 20px 56px #BBBBBB, 24px 56px #FFFFFF, 28px 56px #FFFFFF, 32px 56px #FFFFFF, 36px 56px #FFFFFF, 40px 56px #FFFFFF, 44px 56px #FFFFFF, 48px 56px #BBBBBB, 52px 56px #BBBBBB, 56px 56px #000000, 16px 60px #000000, 20px 60px #000000, 24px 60px #BBBBBB, 28px 60px #BBBBBB, 32px 60px #BBBBBB, 36px 60px #BBBBBB, 40px 60px #BBBBBB, 44px 60px #BBBBBB, 48px 60px #000000, 52px 60px #000000, 24px 64px #000000, 28px 64px #000000, 32px 64px #000000, 36px 64px #000000, 40px 64px #000000, 44px 64px #000000; } }
 
-section.parse {
-  padding: 10px; }
-
 section.faqs {
   margin-bottom: 3rem; }
   section.faqs .title {
@@ -3262,86 +3262,73 @@ section.hardware .hardware-list {
 section.hardware .hardware-title {
   color: #E51F63; }
 
-section.announcements {
-  /* start soc_icons */ }
-  section.announcements #first-column {
-    margin-right: 2.5rem; }
-  section.announcements .grey-background {
-    max-width: 30rem; }
-  section.announcements .dark-title {
-    background-color: #2F3F48;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    max-width: 30rem; }
-  section.announcements .white {
-    color: white;
-    margin: 5px 0; }
-  section.announcements .semi-bold {
-    font-weight: 600; }
-  section.announcements .light-border {
-    border: 1px solid #E6E6E6;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px; }
-  section.announcements .light-border p a {
-    text-decoration: none;
-    color: #2C383D; }
-  section.announcements .light-border p a:hover {
-    text-decoration: none;
-    color: #0692D1; }
-  section.announcements .list {
-    list-style-type: none; }
-  section.announcements .soc_icons ul {
-    margin-bottom: 0;
-    border-bottom-left: 4px;
-    border-bottom-right: 4px; }
-  section.announcements .soc_icons ul li {
-    display: inline-block;
-    margin-left: 1.1rem; }
-  section.announcements .soc_icons ul li a {
+section.announcments .twitter h1, section.announcments .parse h1 {
+  color: #546675;
+  padding: 0;
+  margin: 0; }
+
+section.announcments .parse {
+  min-height: 407px; }
+
+section.info .dark-title {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+  section.info .dark-title h1 {
+    color: #546675;
+    padding: 0;
+    margin: 0; }
+  section.info .dark-title p {
+    padding: 0;
+    margin: 0; }
+
+section.info .grey-background {
+  padding: 20px;
+  min-height: 170px; }
+
+section.info .semi-bold {
+  font-weight: 600; }
+
+section.info a {
+  text-decoration: none;
+  color: #2C383D; }
+
+section.info a:hover {
+  color: #E51F63; }
+
+section.info .social {
+  /*
+    	ERASE THIS
+    	 */
+  padding-top: 50px;
+  margin-bottom: 0;
+  border-bottom-left: 4px;
+  border-bottom-right: 4px; }
+  section.info .social a {
     color: #ffffff;
     font-size: 24px;
     display: block; }
-  section.announcements .soc_icons ul li a i {
-    line-height: 40px;
-    width: 100px;
-    height: 40px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
-  section.announcements .soc_icons ul li a i.fa-facebook {
+    section.info .social a i {
+      line-height: 40px;
+      width: 100px;
+      height: 40px; }
+  section.info .social .fa-facebook {
     background: #3660A0;
     border-radius: 4px; }
-  section.announcements .soc_icons ul li a i.fa-facebook:hover {
-    background: #2F3F48; }
-  section.announcements .soc_icons ul li a i.fa-twitter {
+  section.info .social .fa-facebook:hover {
+    color: #E51F63;
+    background: #ffffff; }
+  section.info .social .fa-twitter {
     background: #2CAAE1;
     border-radius: 4px; }
-  section.announcements .soc_icons ul li a i.fa-twitter:hover {
-    background: #2F3F48; }
-  section.announcements .soc_icons ul li a i.fa-slack {
+  section.info .social .fa-twitter:hover {
+    color: #E51F63;
+    background: #ffffff; }
+  section.info .social .fa-slack {
     background: #E4186C;
     border-radius: 4px; }
-  section.announcements .soc_icons ul li a i.fa-slack:hover {
-    background: #2F3F48; }
-
-@media only screen and (max-width: 43em) {
-  section.announcements #first-column {
-    margin-right: 0rem; }
-  section.announcements .soc_icons ul li a i {
-    text-decoration: none;
-    width: 80px;
-    height: 40px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
-  section.announcements .soc_icons ul li {
-    margin-left: -4px; } }
-
-@media only screen and (max-width: 30em) {
-  section.announcements .soc_icons ul li {
-    margin-left: 1.5rem; } }
+  section.info .social .fa-slack:hover {
+    color: #E51F63;
+    background: #ffffff; }
 
 section.map .grey-background img {
   width: 400px;
@@ -3393,6 +3380,9 @@ section.map .mapkey {
   width: 100%;
   max-width: 600px; }
 
+
+section.schedule > div {
+  padding: 20px 5px 20px 5px; }
 
 section.schedule .row {
   max-width: 70rem; }
@@ -3470,3 +3460,9 @@ section.travel .red {
 
 section.travel .green {
   color: #10B328; }
+
+section.travel a {
+  color: #000000; }
+
+section.travel a:hover {
+  color: #E51F63; }
