@@ -33,6 +33,7 @@ section.faqs{
     }
 
     .text{
+        text-align:left;
         height:0;
         overflow:hidden;
         margin: 0 auto;
@@ -62,8 +63,9 @@ section.faqs{
         color:$bh-white;
     }
     .text{
+        // overflow:visible;
         height:100px;
-        padding:5px;
+        padding:10px;
         border:2px solid $bh-pink;
         border-top:0px;
         border-bottom-width:1px;

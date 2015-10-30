@@ -3300,6 +3300,7 @@ section.faqs .title:hover {
   color: #ffffff; }
 
 section.faqs .text {
+  text-align: left;
   height: 0;
   overflow: hidden;
   margin: 0 auto;
@@ -3325,7 +3326,7 @@ section.faqs .grey-background > div {
 
 .faqs .active .text {
   height: 100px;
-  padding: 5px;
+  padding: 10px;
   border: 2px solid #E51F63;
   border-top: 0px;
   border-bottom-width: 1px; }
@@ -3351,13 +3352,13 @@ section.announcments .sub-title {
   background-color: #546675;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  padding: 0.75rem; }
+  padding: 0.1rem; }
   section.announcments .sub-title h1 {
-    color: white;
-    font-weight: 300;
+    color: #ffffff;
+    font-weight: 400;
     padding: 0;
     margin: 0;
-    padding-left: 0.5rem; }
+    padding-left: 0.9rem; }
 
 section.announcments .parse {
   height: 407px;
@@ -3367,20 +3368,21 @@ section.announcments .parse {
     padding-top: 50px;
     height: 100%; }
 
+section.info .sub-title {
+  background-color: #546675;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 0.1rem; }
+  section.info .sub-title h1 {
+    color: #ffffff;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    padding-left: 0.9rem; }
+
 section.info .dark-title {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px; }
-  section.info .dark-title .sub-title {
-    background-color: #546675;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    padding: 0.75rem; }
-    section.info .dark-title .sub-title h1 {
-      color: white;
-      font-weight: 300;
-      padding: 0;
-      margin: 0;
-      padding-left: 0.5rem; }
   section.info .dark-title p {
     padding: 0;
     margin: 0; }
