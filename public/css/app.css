@@ -3279,10 +3279,14 @@ section.faqs h1, section.faqs h2, section.faqs h3, section.faqs h4, section.faqs
   padding: 0;
   margin: 0; }
 
+section.faqs .spacer {
+  height: 30px; }
+
 section.faqs .info > div {
   max-width: 50%;
   min-width: 350px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 20px; }
 
 section.faqs .title {
   font-size: 20px;
@@ -3313,9 +3317,7 @@ section.faqs .text-wrapper {
 section.faqs .grey-background > div {
   max-width: 50%;
   min-width: 350px;
-  margin: 0 auto;
-  padding: 20px;
-  margin-bottom: 30px; }
+  margin: 0 auto; }
 
 .faqs .active .title {
   background-color: #E51F63;
@@ -3355,7 +3357,12 @@ section.announcments .sub-title {
     padding-left: 0.5rem; }
 
 section.announcments .parse {
-  min-height: 407px; }
+  height: 407px;
+  position: relative; }
+  section.announcments .parse .grey-background {
+    text-align: center;
+    padding-top: 50px;
+    height: 100%; }
 
 section.info .dark-title {
   border-top-left-radius: 4px;
@@ -3472,7 +3479,8 @@ section.map .floors img {
 
 section.map .mapkey {
   width: 100%;
-  max-width: 600px; }
+  max-width: 600px;
+  margin-bottom: 40px; }
 
 section.prizes .grey-background h1, section.prizes .grey-background h2, section.prizes .grey-background h3, section.prizes .grey-background h4, section.prizes .grey-background p {
   padding: 0;
@@ -3485,8 +3493,10 @@ section.prizes .text {
   margin: 0 auto; }
 
 section.prizes .details > div {
-  max-width: 50%;
-  min-width: 350px; }
+  max-width: 60%;
+  min-width: 500px;
+  margin: 0 auto;
+  padding: 20px; }
 
 section.prizes .last-prize {
   margin-bottom: 3rem; }

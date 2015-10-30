@@ -5,6 +5,9 @@ section.faqs{
         padding:0;
         margin:0;
     }
+    .spacer{
+        height:30px;
+    }
     .grey-background{
 
     }
@@ -15,6 +18,7 @@ section.faqs{
         max-width:50%;
         min-width:350px;
         margin: 0 auto;
+        padding:20px;
     }
     .title{
         font-size:20px;
@@ -47,9 +51,8 @@ section.faqs{
         max-width:50%;
         min-width:350px;
         margin: 0 auto;
-        padding: 20px;
-        margin-bottom:30px;
     }
+
 
 }
 
@@ -66,5 +69,16 @@ section.faqs{
         border-bottom-width:1px;
     }
 }
+
+// .faqs .active:hover{
+//     .title:hover{
+//         background-color:$bh-light-pink;
+//     }
+//     .text{
+//         border:2px solid $bh-light-pink;
+//         border-top:0px;
+//         border-bottom-width:1px;
+//     }
+// }
 
 

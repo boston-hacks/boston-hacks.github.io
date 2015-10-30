@@ -25,7 +25,13 @@ section.announcments{
     }
 
     .parse{
-    	min-height: 407px;
+        height:407px;
+        position:relative;
+        .grey-background{
+            text-align:center;
+            padding-top:50px;
+            height:100%;
+        }
     }
 }
 
