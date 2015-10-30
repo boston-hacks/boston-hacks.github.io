@@ -945,8 +945,8 @@ select {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.eot?v=4.4.0");
-  src: url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../bower_componenets/fontawesome/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.4.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -3253,15 +3253,95 @@ section.faqs {
 .faqs .active .text {
   height: 150%; }
 
-section.hardware {
-  margin-bottom: 3rem; }
-  section.hardware .row {
-    max-width: 52rem; }
-  section.hardware .hardware-list {
-    list-style-type: none; }
-  section.hardware .hardware-title {
-    color: #E51F63; }
+section.hardware .row {
+  max-width: 52rem; }
 
+section.hardware .hardware-list {
+  list-style-type: none; }
+
+section.hardware .hardware-title {
+  color: #E51F63; }
+
+section.announcements {
+  /* start soc_icons */ }
+  section.announcements #first-column {
+    margin-right: 2.5rem; }
+  section.announcements .grey-background {
+    max-width: 30rem; }
+  section.announcements .dark-title {
+    background-color: #2F3F48;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    max-width: 30rem; }
+  section.announcements .white {
+    color: white;
+    margin: 5px 0; }
+  section.announcements .semi-bold {
+    font-weight: 600; }
+  section.announcements .light-border {
+    border: 1px solid #E6E6E6;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px; }
+  section.announcements .light-border p a {
+    text-decoration: none;
+    color: #2C383D; }
+  section.announcements .light-border p a:hover {
+    text-decoration: none;
+    color: #0692D1; }
+  section.announcements .list {
+    list-style-type: none; }
+  section.announcements .soc_icons ul {
+    margin-bottom: 0;
+    border-bottom-left: 4px;
+    border-bottom-right: 4px; }
+  section.announcements .soc_icons ul li {
+    display: inline-block;
+    margin-left: 1.1rem; }
+  section.announcements .soc_icons ul li a {
+    color: #ffffff;
+    font-size: 24px;
+    display: block; }
+  section.announcements .soc_icons ul li a i {
+    line-height: 40px;
+    width: 100px;
+    height: 40px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  section.announcements .soc_icons ul li a i.fa-facebook {
+    background: #3660A0;
+    border-radius: 4px; }
+  section.announcements .soc_icons ul li a i.fa-facebook:hover {
+    background: #2F3F48; }
+  section.announcements .soc_icons ul li a i.fa-twitter {
+    background: #2CAAE1;
+    border-radius: 4px; }
+  section.announcements .soc_icons ul li a i.fa-twitter:hover {
+    background: #2F3F48; }
+  section.announcements .soc_icons ul li a i.fa-slack {
+    background: #E4186C;
+    border-radius: 4px; }
+  section.announcements .soc_icons ul li a i.fa-slack:hover {
+    background: #2F3F48; }
+
+@media only screen and (max-width: 43em) {
+  section.announcements #first-column {
+    margin-right: 0rem; }
+  section.announcements .soc_icons ul li a i {
+    text-decoration: none;
+    width: 80px;
+    height: 40px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  section.announcements .soc_icons ul li {
+    margin-left: -4px; } }
+
+@media only screen and (max-width: 30em) {
+  section.announcements .soc_icons ul li {
+    margin-left: 1.5rem; } }
 
 section.map .grey-background img {
   width: 400px;
@@ -3314,27 +3394,33 @@ section.map .mapkey {
   max-width: 600px; }
 
 
-section.schedule {
-  margin-bottom: 3rem; }
-  section.schedule .row {
-    max-width: 70rem; }
-  section.schedule .schedule-table {
-    width: 100%;
-    margin: 0 auto; }
-  section.schedule .schedule-header {
-    color: #E51F63; }
-  section.schedule .start-time {
-    width: 15%; }
-  section.schedule .end-time {
-    width: 15%; }
-  section.schedule .start-time-2 {
-    width: 10%; }
-  section.schedule .end-time-2 {
-    width: 14%; }
-  section.schedule .event {
-    width: 40%; }
-  section.schedule .location {
-    width: 30%; }
+section.schedule .row {
+  max-width: 70rem; }
+
+section.schedule .schedule-table {
+  width: 100%;
+  margin: 0 auto; }
+
+section.schedule .schedule-header {
+  color: #E51F63; }
+
+section.schedule .start-time {
+  width: 15%; }
+
+section.schedule .end-time {
+  width: 15%; }
+
+section.schedule .start-time-2 {
+  width: 10%; }
+
+section.schedule .end-time-2 {
+  width: 14%; }
+
+section.schedule .event {
+  width: 40%; }
+
+section.schedule .location {
+  width: 30%; }
 
 .company-logo {
   text-align: center; }
@@ -3360,23 +3446,27 @@ section.schedule {
     height: 50px;
     width: auto; }
 
-section.travel {
-  margin-bottom: 3rem; }
-  section.travel .grey-background {
-    color: #4D616A;
-    background-color: #F5F5F5;
-    border-radius: 4px;
-    padding: 5px;
-    margin-bottom: 20px; }
-  section.travel .smaller-row {
-    max-width: 52rem; }
-  section.travel .travel-list {
-    list-style-type: none; }
-  section.travel .travel-subtitle {
-    color: #E51F63; }
-  section.travel .silver {
-    color: #8C8C8C; }
-  section.travel .red {
-    color: #E61E49; }
-  section.travel .green {
-    color: #10B328; }
+section.travel .grey-background {
+  color: #4D616A;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 20px; }
+
+section.travel .smaller-row {
+  max-width: 52rem; }
+
+section.travel .travel-list {
+  list-style-type: none; }
+
+section.travel .travel-subtitle {
+  color: #E51F63; }
+
+section.travel .silver {
+  color: #8C8C8C; }
+
+section.travel .red {
+  color: #E61E49; }
+
+section.travel .green {
+  color: #10B328; }
