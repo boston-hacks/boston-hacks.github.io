@@ -3441,8 +3441,8 @@ section.prizes .text {
   margin: 0 auto; }
 
 section.prizes .info > div {
-  max-width: 50%;
-  min-width: 350px;
+  max-width: 60%;
+  min-width: 500px;
   margin: 0 auto;
   padding: 20px; }
 
