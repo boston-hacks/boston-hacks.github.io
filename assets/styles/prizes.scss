@@ -4,4 +4,29 @@ section.prizes{
 	.prize-item{
 
 	}
+
+	.grey-background{
+        h1, h2, h3, h4, p{
+            padding:0;
+            margin:0;
+        }
+    }
+
+	.text{
+        height:0;
+        overflow:hidden;
+        width:200px;
+        margin: 0 auto;
+    }
+    
+    .info > div{
+        max-width:50%;
+        min-width:350px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+	.last-prize{
+		margin-bottom: 3rem;
+	}
 }

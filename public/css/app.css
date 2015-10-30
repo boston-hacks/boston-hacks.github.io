@@ -3294,7 +3294,7 @@ section.faqs .text {
   width: 200px;
   margin: 0 auto; }
 
-section.faqs .info > div {
+section.faqs .grey-background > div {
   max-width: 50%;
   min-width: 350px;
   margin: 0 auto;
@@ -3430,6 +3430,24 @@ section.map .mapkey {
   width: 100%;
   max-width: 600px; }
 
+section.prizes .grey-background h1, section.prizes .grey-background h2, section.prizes .grey-background h3, section.prizes .grey-background h4, section.prizes .grey-background p {
+  padding: 0;
+  margin: 0; }
+
+section.prizes .text {
+  height: 0;
+  overflow: hidden;
+  width: 200px;
+  margin: 0 auto; }
+
+section.prizes .info > div {
+  max-width: 50%;
+  min-width: 350px;
+  margin: 0 auto;
+  padding: 20px; }
+
+section.prizes .last-prize {
+  margin-bottom: 3rem; }
 
 section.schedule > div {
   padding: 20px 5px 20px 5px; }
