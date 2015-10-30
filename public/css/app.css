@@ -3467,9 +3467,7 @@ section.prizes .text {
 
 section.prizes .details > div {
   max-width: 50%;
-  min-width: 350px;
-  margin: 0 auto;
-  padding: 20px; }
+  min-width: 350px; }
 
 section.prizes .last-prize {
   margin-bottom: 3rem; }
