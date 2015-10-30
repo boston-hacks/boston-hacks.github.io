@@ -25,11 +25,9 @@ function faq(selected){
 		els[i].className = "faq-question";
 	};
 	selected.className += " active";
-	console.log(selected);
 }
 
 function map(id){
-	console.log(id);
 	var floors = $(".floors div");
 	var buttons = $(".floors-buttons div");
 	for (var i = 0; i <= floors.length - 1; i++) {
