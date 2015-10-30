@@ -15,8 +15,22 @@
     text-align: right;
 }
 
+.thin{ font-width:$thin;}
+.extra-light{ font-width:$extra-light;}
+.light{ font-width:$light;}
+.normal{ font-width:$normal;}
+.medium{ font-width:$medium;}
+.semi-bold{ font-width:$semi-bold;}
+.bold{ font-width:$bold;}
+.heavy{ font-width:$heavy;}
+.black{ font-width:$black;}
+
 body {
     font-family: $main-font;
+    h1, h2, h3, h4, p{
+        padding:0;
+        margin:0;
+    }
 }
 
 .white{
@@ -98,7 +112,20 @@ section{
 		color: $bh-grey-bg-font;
 		background-color: $bh-grey-bg;
 		border-radius: 4px;
+        a{
+            color: $bh-grey-bg-font;
+        }
+        a:hover{
+            color: $bh-pink;
+        }
 	}
+    a{
+        text-decoration:none;
+        color:#000000;
+    }
+    a:hover{
+        color: $bh-pink;
+    }
 }
 .page-title {
     margin: 1rem 0;

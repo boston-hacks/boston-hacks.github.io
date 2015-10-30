@@ -7,6 +7,9 @@ section.travel{
 		border-radius: 4px;
 		padding: 5px;
 		margin-bottom: 20px;
+		a{
+			color: $bh-grey-bg-font;
+		}
 	}
 
 	.smaller-row{
@@ -34,6 +37,7 @@ section.travel{
 	}
 	a{
 		color:#000000;
+		text-decoration:none;
 	}
 	a:hover{
 		color:$bh-pink;

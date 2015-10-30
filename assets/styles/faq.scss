@@ -1,8 +1,9 @@
 @import "variables";
 
 section.faqs{
-    margin-bottom: 3rem;
-
+    .questions{
+        padding-top:10px;
+    }
     .title{
         font-size:20px;
         font-weight: $semi-bold;
@@ -16,6 +17,12 @@ section.faqs{
         width:200px;
         margin: 0 auto;
     }
+    .info > div{
+        max-width:50%;
+        min-width:350px;
+        margin: 0 auto;
+        padding: 20px;
+    }
 }
 
 .faqs .active{
@@ -23,3 +30,5 @@ section.faqs{
         height:150%;
     }
 }
+
+
