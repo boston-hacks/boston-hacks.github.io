@@ -10,6 +10,12 @@ section.hardware{
 	}
 
 	.hardware-title{
-		color: #E51F63;
+		a{
+			color: #E51F63;
+		}
+
+		a:hover{
+			color: black;
+		}
 	}
 }

@@ -3336,8 +3336,11 @@ section.hardware .row {
 section.hardware .hardware-list {
   list-style-type: none; }
 
-section.hardware .hardware-title {
+section.hardware .hardware-title a {
   color: #E51F63; }
+
+section.hardware .hardware-title a:hover {
+  color: black; }
 
 section.announcments .twitter h1, section.announcments .parse h1 {
   color: #546675;
