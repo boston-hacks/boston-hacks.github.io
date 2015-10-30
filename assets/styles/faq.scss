@@ -1,6 +1,12 @@
 @import "variables";
 
 section.faqs{
+    .grey-background{
+        h1, h2, h3, h4, p{
+            padding:0;
+            margin:0;
+        }
+    }
     .questions{
         padding-top:10px;
     }
