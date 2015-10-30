@@ -23,7 +23,7 @@ function faq(selected){
 	var els = $(".faq-question");
 	for (var i = 0; i <= els.length - 1; i++) {
 		els[i].className = "faq-question";
-	};
+	}
 	selected.className += " active";
 }
 

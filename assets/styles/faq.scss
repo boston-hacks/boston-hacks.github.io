@@ -1,39 +1,69 @@
 @import "variables";
 
 section.faqs{
+    h1, h2, h3, h4, p{
+        padding:0;
+        margin:0;
+    }
     .grey-background{
-        h1, h2, h3, h4, p{
-            padding:0;
-            margin:0;
-        }
+
     }
     .questions{
-        padding-top:10px;
+        // height:40px;
+    }
+    .info > div{
+        max-width:50%;
+        min-width:350px;
+        margin: 0 auto;
     }
     .title{
         font-size:20px;
         font-weight: $semi-bold;
         color:$bh-pink;
         cursor:pointer;
+        height:30px;
+    }
+    .title:hover{
+        background-color:$bh-pink;
+        color:$bh-white;
     }
 
     .text{
         height:0;
         overflow:hidden;
-        width:200px;
         margin: 0 auto;
+        padding:0;
+        -webkit-transition: height 0.2s ease;
+        -moz-transition: height 0.2s ease;
+        -o-transition: height 0.2s ease;
+        -ms-transition: height 0.2s ease;
+        transition: height 0.2s ease;
+    }
+    .text-wrapper{
+        margin:0 auto;
+        width:50%;
     }
     .grey-background > div{
         max-width:50%;
         min-width:350px;
         margin: 0 auto;
         padding: 20px;
+        margin-bottom:30px;
     }
+
 }
 
 .faqs .active{
+    .title{
+        background-color:$bh-pink;
+        color:$bh-white;
+    }
     .text{
-        height:150%;
+        height:100px;
+        padding:5px;
+        border:2px solid $bh-pink;
+        border-top:0px;
+        border-bottom-width:1px;
     }
 }
 
