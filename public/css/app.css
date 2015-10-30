@@ -3342,16 +3342,35 @@ section.announcments .twitter h1, section.announcments .parse h1 {
   padding: 0;
   margin: 0; }
 
+section.announcments .sub-title {
+  background-color: #546675;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 0.75rem; }
+  section.announcments .sub-title h1 {
+    color: white;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    padding-left: 0.5rem; }
+
 section.announcments .parse {
   min-height: 407px; }
 
 section.info .dark-title {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px; }
-  section.info .dark-title h1 {
-    color: #546675;
-    padding: 0;
-    margin: 0; }
+  section.info .dark-title .sub-title {
+    background-color: #546675;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 0.75rem; }
+    section.info .dark-title .sub-title h1 {
+      color: white;
+      font-weight: 300;
+      padding: 0;
+      margin: 0;
+      padding-left: 0.5rem; }
   section.info .dark-title p {
     padding: 0;
     margin: 0; }
