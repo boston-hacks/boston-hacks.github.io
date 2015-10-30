@@ -3284,7 +3284,7 @@ section.faqs .spacer {
 
 section.faqs .info > div {
   max-width: 50%;
-  min-width: 350px;
+  min-width: 300px;
   margin: 0 auto;
   padding: 20px; }
 
@@ -3566,6 +3566,9 @@ section.travel .grey-background {
   margin-bottom: 20px; }
   section.travel .grey-background a {
     color: #4D616A; }
+  section.travel .grey-background ul {
+    padding: 0;
+    margin: 1rem; }
 
 section.travel .smaller-row {
   max-width: 52rem; }
