@@ -1,8 +1,9 @@
 Parse.initialize("TpddRNEVg1gw0BJmle7yrRgiLYqAbLLJQN1mJTDC", "sxYXMbpj2jpjHX7I20HQpAGyVjQpajfIwZox22WB");
+console.log("this is working?");
 
 var announcements = Parse.Object.extend("Announcements");
 var query = new Parse.Query(announcements);
-var box = $(".parse .grey-background")[0];
+var box = $(".parse > .grey-background")[0];
 var now = new Date();
 
 function cleanDate(ugly) {
@@ -43,15 +44,14 @@ function fetch(now) {
                     date = event.get("createdAt"),
                     description = event.get("description");
                 var html =
-                    '<div class="parse-wrapper">' +
                     '<div class="parse-title">' + title + '</div>' +
-                    '<div class="parse-date">' + cleanDate(date) + '</div><br>'+
-                    '<div class="parse-content">' + description + '</div></div>';
+                    '<div class="parse-description">' + description + '</div>' +
+                    '<div class="parse-date">' + cleanDate(date) + '</div>';
                 box.innerHTML += html;
             }
         },
         error: function(error) {
-            box.innerHTML = "Could not reach servers, this isn't a mistake though.";
+            alert("reach parse servers");
         }
     });
 }

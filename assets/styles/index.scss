@@ -26,9 +26,36 @@ section.announcments{
     .parse{
         height:407px;
         position:relative;
+
+
+        .parse-wrapper{
+            min-height:100px;
+            border: 1px solid rgba(225,225,225,0);
+            padding:10px;
+            margin-bottom:10px;
+        }
+        .parse-wrapper:hover{
+            border-color: $bh-grey-bg-font;
+        }
+        .parse-title{
+            float:left;
+            font-weight: $bold;
+
+
+        }
+        .parse-date{
+            float:right;
+            color:$bh-grey-bg-font;
+        }
+        .parse-content{
+            float:left;
+
+        }
         .grey-background{
+            color:#000000;
             text-align:center;
-            padding-top:50px;
+            padding:10px 40px 0 40px;
+            overflow:scroll;
             height:100%;
         }
     }

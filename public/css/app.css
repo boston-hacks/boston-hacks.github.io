@@ -3360,9 +3360,26 @@ section.announcments .sub-title {
 section.announcments .parse {
   height: 407px;
   position: relative; }
+  section.announcments .parse .parse-wrapper {
+    min-height: 100px;
+    border: 1px solid rgba(225, 225, 225, 0);
+    padding: 10px;
+    margin-bottom: 10px; }
+  section.announcments .parse .parse-wrapper:hover {
+    border-color: #4D616A; }
+  section.announcments .parse .parse-title {
+    float: left;
+    font-weight: 700; }
+  section.announcments .parse .parse-date {
+    float: right;
+    color: #4D616A; }
+  section.announcments .parse .parse-content {
+    float: left; }
   section.announcments .parse .grey-background {
+    color: #000000;
     text-align: center;
-    padding-top: 50px;
+    padding: 10px 40px 0 40px;
+    overflow: scroll;
     height: 100%; }
 
 section.info .sub-title {

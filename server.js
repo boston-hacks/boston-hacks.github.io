@@ -7,8 +7,9 @@ var port = process.argv[2] || 3000;
 app.use(compression());
 
 app.use(express.static(path.join(__dirname, "/public")));
+// app.use(express.static(path.join(__dirname, "/assets")));
 app.use(express.static(__dirname));
-
 app.listen(port, function() {
+	console.log(__dirname);
     console.log("hosting server on port " + port);
 });
