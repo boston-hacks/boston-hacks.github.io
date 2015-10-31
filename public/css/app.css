@@ -3361,7 +3361,7 @@ section.announcments .parse {
   height: 407px;
   position: relative; }
   section.announcments .parse .parse-wrapper {
-    min-height: 100px;
+    min-height: 110px;
     border: 1px solid rgba(225, 225, 225, 0);
     padding: 10px;
     margin-bottom: 10px; }
@@ -3374,7 +3374,8 @@ section.announcments .parse {
     float: right;
     color: #4D616A; }
   section.announcments .parse .parse-content {
-    float: left; }
+    float: left;
+    text-align: left; }
   section.announcments .parse .grey-background {
     color: #000000;
     text-align: center;
