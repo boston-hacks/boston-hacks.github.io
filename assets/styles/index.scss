@@ -27,28 +27,25 @@ section.announcments{
         height:407px;
         position:relative;
         .parse-wrapper{
-            min-height:110px;
-            border: 1px solid rgba(225,225,225,0);
             padding:10px;
-            margin-bottom:10px;
-        }
-        .parse-wrapper:hover{
-            border-color: $bh-grey-bg-font;
         }
         .parse-title{
             float:left;
             font-weight: $bold;
         }
         .parse-date{
-            float:right;
+            clear:left;
+            float:left;
             color:$bh-grey-bg-font;
         }
         .parse-content{
             float:left;
+            clear:left;
             text-align:left;
 
         }
         .grey-background{
+            border: 1px solid rgba(225,225,225,0);
             color:#000000;
             text-align:center;
             padding:10px 40px 0 40px;

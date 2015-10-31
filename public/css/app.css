@@ -3050,6 +3050,12 @@ section.section-title {
   font-size: 60px;
   font-weight: 600;
   z-index: 8888; }
+  section.section-title a {
+    color: #E51F63; }
+  section.section-title a:hover {
+    color: #FFDA00; }
+    section.section-title a:hover ::after {
+      content: "Rocket League Tourny!"; }
 
 section .grey-background {
   color: #4D616A;
@@ -3361,22 +3367,20 @@ section.announcments .parse {
   height: 407px;
   position: relative; }
   section.announcments .parse .parse-wrapper {
-    min-height: 110px;
-    border: 1px solid rgba(225, 225, 225, 0);
-    padding: 10px;
-    margin-bottom: 10px; }
-  section.announcments .parse .parse-wrapper:hover {
-    border-color: #4D616A; }
+    padding: 10px; }
   section.announcments .parse .parse-title {
     float: left;
     font-weight: 700; }
   section.announcments .parse .parse-date {
-    float: right;
+    clear: left;
+    float: left;
     color: #4D616A; }
   section.announcments .parse .parse-content {
     float: left;
+    clear: left;
     text-align: left; }
   section.announcments .parse .grey-background {
+    border: 1px solid rgba(225, 225, 225, 0);
     color: #000000;
     text-align: center;
     padding: 10px 40px 0 40px;

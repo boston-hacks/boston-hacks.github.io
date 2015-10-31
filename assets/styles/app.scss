@@ -100,6 +100,15 @@ section.section-title {
     font-size: 60px;
     font-weight: $semi-bold;
     z-index: 8888;
+    a{
+        color: $bh-pink;
+    }
+    a:hover{
+        color: #FFDA00;
+        ::after{
+            content: "Rocket League Tourny!";
+        }
+    }
     // text-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
 }
 

@@ -44,7 +44,7 @@ function fetch(now) {
                     description = event.get("description");
                 var html =
                     '<div class="parse-wrapper">' +
-                    '<div class="parse-title">' + title + '</div>' +
+                    '<div class="parse-title">' + title + '</div><br>' +
                     '<div class="parse-date">' + cleanDate(date) + '</div><br>'+
                     '<div class="parse-content">' + description + '</div></div>';
                 box.innerHTML += html;
