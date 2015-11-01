@@ -3055,7 +3055,7 @@ section.section-title {
   section.section-title a:hover {
     color: #FFDA00; }
     section.section-title a:hover ::after {
-      content: "Rocket League Tourny!"; }
+      content: "Rocket League Tourney*"; }
 
 section .grey-background {
   color: #4D616A;
