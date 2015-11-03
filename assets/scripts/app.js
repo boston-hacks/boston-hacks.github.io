@@ -1,5 +1,3 @@
-console.log("Hello World");
-
 var collapsed = true;
 function $(query){
 	return document.querySelectorAll(query);
