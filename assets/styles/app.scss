@@ -103,12 +103,6 @@ section.section-title {
     a{
         color: $bh-pink;
     }
-    a:hover{
-        color: #FFDA00;
-        ::after{
-            content: "Rocket League Tourney*";
-        }
-    }
     // text-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
 }
 

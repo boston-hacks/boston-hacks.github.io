@@ -3052,10 +3052,6 @@ section.section-title {
   z-index: 8888; }
   section.section-title a {
     color: #E51F63; }
-  section.section-title a:hover {
-    color: #FFDA00; }
-    section.section-title a:hover ::after {
-      content: "Rocket League Tourney*"; }
 
 section .grey-background {
   color: #4D616A;
