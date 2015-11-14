@@ -2,6 +2,9 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var jshint = require('gulp-jshint');
+var livereload = require('gulp-livereload');
+
+livereload({ start: true });
 
 var paths = {
 	'bower': './bower_components/',
@@ -30,7 +33,8 @@ gulp.task('styles', function() {
         		paths.assets + 'styles/**.scss'        	]
         }))
         .pipe(concat('app.css'))
-        .pipe(gulp.dest('./public/css'));
+        .pipe(gulp.dest('./public/css'))
+        .pipe(livereload());
 });
 
 // gulp.task('scripts', function() {
@@ -47,6 +51,7 @@ gulp.task('styles', function() {
 // });
 
 gulp.task('watch', function() {
+    livereload.listen();
 	gulp.watch(paths.assets + 'styles/**/*.scss', ['styles']);
 	gulp.watch(paths.assets + 'scripts/**/*.js', ['scripts']);
 });
